@@ -36,10 +36,14 @@ Happy Minds Tuitions/
 ├── facilities.html     # Facilities & learning environment
 ├── reviews.html        # Parent reviews & testimonials
 ├── contact.html        # Contact form, address, map
+├── favicon.svg         # Site favicon
+├── vercel.json         # Vercel deployment config (cleanUrls)
 ├── css/
-│   └── styles.css     # Main stylesheet (~2000+ lines)
+│   └── styles.css      # Main stylesheet (~2000+ lines)
 ├── js/
 │   └── script.js      # Navbar, smooth scroll, scroll reveal, footer year
+├── images/             # Static images (add files here)
+├── assets/             # Additional assets (e.g. icons)
 └── README.md
 ```
 
@@ -98,6 +102,14 @@ This is a **static** site. No build step is required.
 
 2. **Production:**  
    Upload the project folder to any static host (e.g. Netlify, Vercel, GitHub Pages, or traditional web hosting). Ensure paths to `css/styles.css` and `js/script.js` stay correct relative to each HTML file.
+
+### Vercel Deployment
+
+The project is ready for **Vercel** with no build step:
+
+- **`vercel.json`** enables `cleanUrls: true` (e.g. `/about` serves `about.html`).
+- All asset paths are relative; Bootstrap and fonts load from CDN.
+- Deploy by connecting your Git repo in the [Vercel dashboard](https://vercel.com) or run `vercel` in the project root. No build command or output directory needed.
 
 ---
 
